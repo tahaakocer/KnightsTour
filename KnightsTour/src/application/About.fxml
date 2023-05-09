@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane accessibleRole="BUTTON" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" styleClass="about-text" stylesheets="@application.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="20.0" layoutY="14.0" lineSpacing="4.0" prefHeight="422.0" prefWidth="460.0" styleClass="about-text" stylesheets="@application.css" text="    Knight's Tour oyunu, satranç tahtasında atın farklı kareleri ziyaret ederek tamamlanması gereken bir strateji oyunudur. At, L şeklinde hareket edebilir. Her hamlede farklı bir kareye gitmek zorundadır ve amacı, tahtada bulunan tüm kareleri sadece bir kez ziyaret etmektir. (Bu oyunda tahta 9x9'dur)&#10;    Oyuna başlamak için, oyuncu bir başlangıç noktası seçer ve atı bu noktaya yerleştirir. Sonrasında, oyuncu atın hareketini seçer ve at yeni bir kareye konumlandırılır. Bu işlem, tüm karelerin ziyaret edilene kadar tekrarlanır.&#10;    Bu oyun, stratejik düşünme ve planlama becerilerini geliştirmeye yardımcı olduğu gibi, aynı zamanda matematiksel bir problemi çözmeyi de gerektirir. Ancak, tamamlanması zor bir oyun olduğundan, bazen tüm kareleri ziyaret etmek için bir strateji bulmak zor olabilir." textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6710526347160339" green="0.13669590651988983" blue="0.13669590651988983" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="0.6710526347160339" green="0.13669590651988983" blue="0.13669590651988983" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.2605263292789459" green="0.2368421107530594" blue="0.7105262875556946" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="btnAboutOkay" layoutX="189.0" layoutY="417.0" mnemonicParsing="false" onAction="#handleAboutButtonAction" prefHeight="59.0" prefWidth="122.0" styleClass="rich-blue" stylesheets="@application.css" text="OKAY" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>
